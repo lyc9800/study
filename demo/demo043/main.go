@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 //二维数组的遍历
+//demo
 
 func main() {
 	arr1 := [2][3]int{{1, 2, 3}, {4, 5, 6}}
