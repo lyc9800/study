@@ -6,18 +6,18 @@ import "fmt"
 
 type Visitor struct {
 	Name string
-	Age int
+	Age  int
 }
 
 func (visitor *Visitor) showPrice() {
-	if visitor.Age >= 90 || visitor.Age <18 {
+	if visitor.Age >= 90 || visitor.Age < 18 {
 		fmt.Println("考虑到安全，建议不要完了")
 		return
 	}
 	if visitor.Age > 18 && visitor.Age < 90 {
-		fmt.Printf("游客姓名: %v\n年龄：%v,请付费20元\n",visitor.Name,visitor.Age)
-	}else {
-		fmt.Printf("游客姓名: %v\n年龄：%v,您可以免费游玩\n",visitor.Name,visitor.Age)
+		fmt.Printf("游客姓名: %v\n年龄：%v,请付费20元\n", visitor.Name, visitor.Age)
+	} else {
+		fmt.Printf("游客姓名: %v\n年龄：%v,您可以免费游玩\n", visitor.Name, visitor.Age)
 	}
 }
 
