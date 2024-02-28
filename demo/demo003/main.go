@@ -8,4 +8,6 @@ func main() {
 	var ptr *int
 	ptr = &i
 	fmt.Printf("变量i的地址是: %x\n", ptr)
+	fmt.Printf("变量i的地址是: %x\n", &ptr)
+	fmt.Printf("变量i的地址是: %x\n", *ptr)
 }
