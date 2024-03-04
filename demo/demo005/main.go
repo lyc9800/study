@@ -31,5 +31,13 @@ func main() {
 	num3 = num1
 	num1 = num2
 	num2 = num3
-	fmt.Printf("num1=%d ,num2=%d ,num3=%d", num1, num2, num3)
+	fmt.Printf("num1=%d ,num2=%d ,num3=%d\n", num1, num2, num3)
+
+	//交换两个变量，不使用中间值
+	var a int = 99
+	var b int = 88
+	a = a + b
+	b = a - b
+	a = a - b
+	fmt.Println("a=", a, "b=", b)
 }
